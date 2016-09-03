@@ -1,0 +1,10 @@
+<template name="tests">
+<body>
+	<div class="tests-container">
+	<a class="btn btn-info" href="/tests-add" role="button">Add Tests</a><br>
+	   {{#each tests}}
+	     {{> test}}
+	   {{/each}}
+	</div>
+</body>
+</template>

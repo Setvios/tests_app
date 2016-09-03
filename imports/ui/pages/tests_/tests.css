@@ -1,0 +1,17 @@
+.tests-container {
+	margin: 10px;
+	background: #ACE7C5;
+}
+
+.tests-block {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #C3C3C3;
+  border-radius: 8px;
+  background-image: linear-gradient(#E3E3E3,#D1D1D1);
+}
+
+.p1 {
+	font-size: 18px;
+	color: red;	
+}
