@@ -11,3 +11,10 @@ FlowRouter.route('/tests-add', {
 		BlazeLayout.render('main_layout', {main: 'tests_add'});
 	}
 });
+
+FlowRouter.route('/test/:id', {
+	name: 'test',
+	action () {
+		BlazeLayout.render('main_layout', {main: 'test'});
+	}
+});

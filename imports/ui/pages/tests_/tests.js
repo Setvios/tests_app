@@ -1,7 +1,7 @@
 import { Template } from 'meteor/templating';
 import { Tests } from '../../../api/tests.js';
 import './tests.html';
-import './test.html';
+import './test_single.html';
 import './tests.css';
 
 Template.tests.helpers({
