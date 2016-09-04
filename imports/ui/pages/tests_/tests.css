@@ -1,10 +1,14 @@
+a.btn {
+	margin-bottom: 8px;
+}
+
 .tests-container {
 	margin: 10px;
 	background: #ACE7C5;
 }
 
 .tests-block {
-  margin: 10px 0;
+  margin: 5px 0;
   padding: 10px;
   border: 1px solid #C3C3C3;
   border-radius: 8px;
