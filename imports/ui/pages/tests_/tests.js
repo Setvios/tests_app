@@ -7,5 +7,11 @@ import './tests.css';
 Template.tests.helpers({
 	tests() {
 		return Tests.find({}, { sort: { createdAt: -1 } });
-	}
+	},
+});
+
+Template.test_single.events({
+  'click .delete'() {
+    Tests.remove(this._id);
+  }
 });
