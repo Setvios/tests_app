@@ -1,9 +1,11 @@
 <template name="test">
-		<div class="main-container">
-		<a class="btn btn-info" href="/questions" role="button">Add question</a><br>
-		<h1>{{testcursor.test}}</h1>
+		<div class="content-container">
+		<a class="btn btn-primary" href="/questions-add" role="button">Add questions</a><br>
 			<div class="questions-container">
-				
+				<p class="pp2">{{testcursor.test}}</p>
+	   		{{#each questions}}
+	   		  {{> question_single}}
+	   		{{/each}}				
 			</div>
 		</div>
 </template>

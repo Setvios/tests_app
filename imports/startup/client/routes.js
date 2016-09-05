@@ -18,3 +18,10 @@ FlowRouter.route('/test/:id', {
 		BlazeLayout.render('main_layout', {main: 'test'});
 	}
 });
+
+FlowRouter.route('/questions-add', {
+	name: 'questions-add',
+	action () {
+		BlazeLayout.render('main_layout', {main: 'questions_add'});
+	}
+});

@@ -1,3 +1,12 @@
-.main-container {
-	margin-top: 10px;
+.questions-container {
+  margin: 5px 0;
+  padding: 8px 12px;
+  border: 1px solid #C3C3C3;
+  border-radius: 8px;
+  background-image: linear-gradient(#E3E3E3,#D1D1D1);
+}
+
+.pp2 {
+	font-size: 22px;
+	color: red;
 }
