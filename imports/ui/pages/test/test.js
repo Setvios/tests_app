@@ -7,11 +7,11 @@ import '../../components/question_single.html';
 import '../../components/question_single.css';
 
 Template.test.helpers ({
-	testcursor() {
+	test() {
 		const id = FlowRouter.getParam("id");
-		const cursor = Tests.findOne({_id: id});
-		console.log(cursor)
-		return cursor;
+		const test = Tests.findOne({_id: id});
+		console.log(test)
+		return test;
 	},
 	questions() {
 		return Questions.find({}, { sort: { createdAt: -1 } });

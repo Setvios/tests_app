@@ -1,8 +1,14 @@
 <template name="test">
 		<div class="content-container">
-		<a class="btn btn-primary" href="/questions-add" role="button">Add questions</a><br>
+		<a 
+			class="btn btn-primary" 
+			href="/questions-add/{{test._id}}" 
+			role="button">
+			Add questions
+		</a>
+		<br />
 			<div class="questions-container">
-				<p class="pp2">{{testcursor.test}}</p>
+				<p class="pp2">{{test.test}}</p>
 	   		{{#each questions}}
 	   		  {{> question_single}}
 	   		{{/each}}				

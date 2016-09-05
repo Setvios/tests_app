@@ -11,16 +11,18 @@ Template.questions_add.events({
     // Get value from form element
     const target = event.target;
     const question = target.question.value;
+    const testId = FlowRouter.getParam('testId');
 
     // Insert a task into the collection
     Questions.insert({
       question,
+      testId: FlowRouter.getParam('testId'),
       createdAt: new Date(), // current time
     }); 
 
     // Clear form
     target.question.value = '';
 
-    //FlowRouter.go('/');
+    FlowRouter.go(`/questions-add/${testId}`);
   },  
 });
