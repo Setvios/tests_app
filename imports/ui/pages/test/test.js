@@ -3,8 +3,7 @@ import { Tests } from '../../../api/tests.js';
 import { Questions } from '../../../api/questions.js';
 import './test.html';
 import './test.css';
-import '../../components/question_single.html';
-import '../../components/question_single.css';
+import '../../pages/test/questionItem.html';
 
 Template.test.helpers ({
 	test() {
