@@ -23,6 +23,6 @@ Template.addQuestion.events({
     // Clear form
     target.question.value = '';
 
-    //FlowRouter.go(`/questions-add/${testId}`);
+    FlowRouter.go(`/test/${testId}`);
   },  
 });

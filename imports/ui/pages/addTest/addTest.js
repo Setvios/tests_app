@@ -4,26 +4,26 @@ import './addTest.html';
 import './addTest.css';
 
 Template.addTest.events({
-  'submit .add-tests-form'(event) {
+  'submit .add-test-form'(event) {
     // Prevent default browser form submit
     event.preventDefault();
 
     // Get value from form element
     const target = event.target;
-    const testname = target.test-name.value;
+    const testName = target.testName.value;
     const level = target.level.value;
     const quantity = target.quantity.value;
 
     // Insert a task into the collection
     Tests.insert({
-      testname,
+      testName,
       level,
       quantity,
       createdAt: new Date(), // current time
     }); 
 
     // Clear form
-    target.test.value = '';
+    target.testName.value = '';
     target.level.value = '';
     target.quantity.value = '';
 

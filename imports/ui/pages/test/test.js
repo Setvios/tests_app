@@ -12,6 +12,7 @@ Template.test.helpers ({
 		return test;
 	},
 	questions() {
-		return Questions.find({}, { sort: { createdAt: -1 } });
+		const id = FlowRouter.getParam("id");
+		return Questions.find({testId: id}, { sort: { createdAt: -1 } });
 	}
 });
