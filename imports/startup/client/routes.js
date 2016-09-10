@@ -5,10 +5,10 @@ FlowRouter.route('/', {
 	}
 });
 
-FlowRouter.route('/tests-add', {
-	name: 'tests_add',
+FlowRouter.route('/add-test', {
+	name: 'addTest',
 	action () {
-		BlazeLayout.render('main_layout', {main: 'tests_add'});
+		BlazeLayout.render('main_layout', {main: 'addTest'});
 	}
 });
 

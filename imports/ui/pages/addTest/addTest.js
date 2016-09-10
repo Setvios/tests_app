@@ -1,7 +1,7 @@
 import { Template } from 'meteor/templating';
 import { Tests } from '../../../api/tests.js';
-import './tests_add.html';
-import './tests_add.css';
+import './addTest.html';
+import './addTest.css';
 
 Template.tests_add.events({
   'submit .add-tests-form'(event) {
