@@ -10,13 +10,13 @@ Template.addTest.events({
 
     // Get value from form element
     const target = event.target;
-    const test = target.test.value;
+    const testname = target.test-name.value;
     const level = target.level.value;
     const quantity = target.quantity.value;
 
     // Insert a task into the collection
     Tests.insert({
-      test,
+      testname,
       level,
       quantity,
       createdAt: new Date(), // current time

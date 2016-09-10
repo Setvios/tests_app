@@ -1,13 +1,13 @@
 .template-container {
 	margin: 10px;
-	background: #ACE7C5;
+	padding: 5px 15px;
 }
 
 .content-block {
   margin: 5px 0;
   padding: 10px 15px 5px 15px;
   border: 1px solid #C3C3C3;
-  border-radius: 8px;
+  border-radius: 5px;
   background-image: linear-gradient(#E3E3E3,#D1D1D1);
 }
 
