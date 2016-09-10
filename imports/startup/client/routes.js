@@ -19,6 +19,13 @@ FlowRouter.route('/test/:id', {
 	}
 });
 
+FlowRouter.route('/edit-test/:editId', {
+	name: 'editTest',
+	action () {
+		BlazeLayout.render('mainLayout', {main: 'editTest'});
+	}
+});
+
 FlowRouter.route('/add-question/:testId', {
 	name: 'addQuestion',
 	action () {
