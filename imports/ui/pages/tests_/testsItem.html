@@ -1,13 +1,17 @@
 <template name="testsItem">
-	<div class="tests-block">
+	<div class="content-block">
 		<div class="tests-inside">
 			<p class="p1">{{test}}</p>
 		</div>
-		<div class="tests-descr">
+		<div class="tests-description">
 			<p class="p2">Hardness level: <span>{{level}}</span></p>
 			<p class="p3">Quantity of tasks: <span>{{quantity}}</span></p>
 		</div>
 		<a class="btn btn-warning" href="test/{{_id}}">Checkout test</a>
-		<button class="btn btn-mini btn-danger delete margin-r" type="button">Delete test</button>
+		<a class="btn btn-primary" href="#">Edit test</a>
+		<button 
+			class="btn btn-mini btn-danger delete margin-r" 
+			type="button">Delete test
+		</button>
 	</div>
 </template>

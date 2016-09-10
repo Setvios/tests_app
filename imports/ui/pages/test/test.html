@@ -1,5 +1,5 @@
 <template name="test">
-		<div class="content-container">
+		<div class="test">
 		<a 
 			class="btn btn-primary" 
 			href="/questions-add/{{test._id}}" 
@@ -7,7 +7,7 @@
 			Add questions
 		</a>
 		<br />
-			<div class="questions-container">
+			<div class="content-block">
 				<p class="pp2">{{test.test}}</p>
 	   		{{#each questions}}
 	   		  {{> question_single}}
