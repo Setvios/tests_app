@@ -1,27 +1,27 @@
 FlowRouter.route('/', {
 	name: 'home',
 	action () {
-		BlazeLayout.render('main_layout', {main: 'tests'});
+		BlazeLayout.render('mainLayout', {main: 'tests'});
 	}
 });
 
 FlowRouter.route('/add-test', {
 	name: 'addTest',
 	action () {
-		BlazeLayout.render('main_layout', {main: 'addTest'});
+		BlazeLayout.render('mainLayout', {main: 'addTest'});
 	}
 });
 
 FlowRouter.route('/test/:id', {
 	name: 'test',
 	action () {
-		BlazeLayout.render('main_layout', {main: 'test'});
+		BlazeLayout.render('mainLayout', {main: 'test'});
 	}
 });
 
-FlowRouter.route('/questions-add/:testId', {
-	name: 'questions-add',
+FlowRouter.route('/add-question/:testId', {
+	name: 'addQuestion',
 	action () {
-		BlazeLayout.render('main_layout', {main: 'questions_add'});
+		BlazeLayout.render('mainLayout', {main: 'addQuestion'});
 	}
 });

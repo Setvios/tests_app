@@ -3,7 +3,7 @@ import { Tests } from '../../../api/tests.js';
 import './addTest.html';
 import './addTest.css';
 
-Template.tests_add.events({
+Template.addTest.events({
   'submit .add-tests-form'(event) {
     // Prevent default browser form submit
     event.preventDefault();

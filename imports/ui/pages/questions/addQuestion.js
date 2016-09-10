@@ -1,10 +1,10 @@
 import { Template } from 'meteor/templating';
 import { Questions } from '../../../api/questions.js';
-import './questions_add.html';
-import './questions_add.css';
+import './addQuestion.html';
+import './addQuestion.css';
 
-Template.questions_add.events({
-  'submit .add-questions-form'(event) {
+Template.addQuestion.events({
+  'submit .add-question-form'(event) {
     // Prevent default browser form submit
     event.preventDefault();
 
@@ -23,6 +23,6 @@ Template.questions_add.events({
     // Clear form
     target.question.value = '';
 
-    FlowRouter.go(`/questions-add/${testId}`);
+    //FlowRouter.go(`/questions-add/${testId}`);
   },  
 });
