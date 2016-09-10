@@ -16,7 +16,7 @@ Template.questions_add.events({
     // Insert a task into the collection
     Questions.insert({
       question,
-      testId: FlowRouter.getParam('testId'),
+      testId,
       createdAt: new Date(), // current time
     }); 
 

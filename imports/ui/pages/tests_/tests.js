@@ -1,7 +1,7 @@
 import { Template } from 'meteor/templating';
 import { Tests } from '../../../api/tests.js';
 import './tests.html';
-import './test_single.html';
+import './testsItem.html';
 import './tests.css';
 
 Template.tests.helpers({
@@ -10,7 +10,7 @@ Template.tests.helpers({
 	},
 });
 
-Template.test_single.events({
+Template.testsItem.events({
   'click .delete'() {
     Tests.remove(this._id);
   }
